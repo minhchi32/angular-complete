@@ -11,7 +11,12 @@ export class RecipeListComponent implements OnInit {
     new Recipe(
       'A Test Recipe',
       'This is simply a test',
-      'https://assets.bonappetit.com/photos/5c2f8fe26558e92c8a6226711:1/w_2700,h_2700,c_limit/bolognese-1.jpg'
+      'https://media.istockphoto.com/photos/spaghetti-bolognese-on-a-white-plate-picture-id652225084?k=20&m=652225084&s=612x612&w=0&h=h0NEoW8JnUfTB3mon7DB5mF_0J1VA4rlkKEvO-SGk2M='
+    ),
+    new Recipe(
+      'A Test Recipe1',
+      'This is simply a test',
+      'https://media.istockphoto.com/photos/spaghetti-bolognese-on-a-white-plate-picture-id652225084?k=20&m=652225084&s=612x612&w=0&h=h0NEoW8JnUfTB3mon7DB5mF_0J1VA4rlkKEvO-SGk2M='
     ),
   ];
   constructor() {}
