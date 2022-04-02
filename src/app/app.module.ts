@@ -11,6 +11,7 @@ import { ShoppingListComponent } from './shopping-list/shopping-list.component';
 import { ShoppingEditComponent } from './shopping-list/shopping-edit/shopping-edit.component';
 import { SuccessAlertComponent } from './alert/success-alert/success-alert.component';
 import { WarningAlertComponent } from './alert/warning-alert/warning-alert.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { WarningAlertComponent } from './alert/warning-alert/warning-alert.compo
     WarningAlertComponent,
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
