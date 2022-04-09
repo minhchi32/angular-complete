@@ -12,6 +12,7 @@ import { ShoppingEditComponent } from './shopping-list/shopping-edit/shopping-ed
 import { SuccessAlertComponent } from './alert/success-alert/success-alert.component';
 import { WarningAlertComponent } from './alert/warning-alert/warning-alert.component';
 import { FormsModule } from '@angular/forms';
+import { DropdownDirective } from './shared/dropdown.directive';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { FormsModule } from '@angular/forms';
     ShoppingEditComponent,
     SuccessAlertComponent,
     WarningAlertComponent,
+    DropdownDirective,
   ],
   imports: [
     BrowserModule,
