@@ -13,6 +13,7 @@ import { SuccessAlertComponent } from './alert/success-alert/success-alert.compo
 import { WarningAlertComponent } from './alert/warning-alert/warning-alert.component';
 import { FormsModule } from '@angular/forms';
 import { DropdownDirective } from './shared/dropdown.directive';
+import { ShoppingListService } from './shopping-list/shopping-list.service';
 
 @NgModule({
   declarations: [
@@ -28,11 +29,8 @@ import { DropdownDirective } from './shared/dropdown.directive';
     WarningAlertComponent,
     DropdownDirective,
   ],
-  imports: [
-    BrowserModule,
-    FormsModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+  imports: [BrowserModule, FormsModule],
+  providers: [ShoppingListService],
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
