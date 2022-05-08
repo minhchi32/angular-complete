@@ -1,50 +1,55 @@
 <div class="row">
-    <div class="col-sm-12">
-        <img src="{{recipe.imagePath}}" alt="" style="max-height: 300px;">
-    </div>
+  <div class="col-sm-12">
+
+    <img src="{{ recipe.imagePath }}" alt="" style="max-height: 300px;">
+
+  </div>
 </div>
 
 <div class="row">
-    <div class="col-sm-12">
-        <h1>{{recipe.name}}</h1>
-    </div>
+  <div class="col-sm-12">
+    <h1>{{ recipe.name }}</h1>
+  </div>
 </div>
 
 <div class="row">
-    <div class="col-sm-12">
+  <div class="col-sm-12">
 
-        <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
-            <div class="btn-group" role="group" appDropdown>
+    <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
 
-                <button id="btnGroupDrop1" type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"
-                    aria-haspopup="true" aria-expanded="false">
+      <div class="btn-group" role="group" appDropdown>
 
-                    Manage
-                </button>
+        <button id="btnGroupDrop1" type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
 
-                <div class="dropdown-menu show" aria-labelledby="btnGroupDrop1">
+          Manage
+        </button>
 
-                    <a (click)="onAddToShoppingList()" class="dropdown-item" style="cursor:pointer;">To Shopping List</a>
-                    <a class="dropdown-item" style="cursor:pointer;" (click)="onEditRecipe()">Edit Recipe</a>
-                    <a class="dropdown-item" style="cursor:pointer;">Manage Recipe</a>
-                </div>
-            </div>
+        <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+
+          <a (click)="onAddToShoppingList()" class="dropdown-item" style="cursor: pointer;">To Shopping List</a>
+
+          <a class="dropdown-item" style="cursor: pointer;" (click)="onEditRecipe()">Edit Recipe</a>
+
+          <a class="dropdown-item" style="cursor: pointer;" (click)="onDeleteRecipe()">Delete Recipe</a>
         </div>
+      </div>
     </div>
+  </div>
 </div>
 
 <div class="row">
-    <div class="col-sm-12">
-        {{recipe.description}}
-    </div>
+  <div class="col-sm-12">
+    {{ recipe.description }}
+  </div>
 </div>
 
 <div class="row">
-    <div class="col-sm-12">
-        <ul class="list-group">
-            <li class="list-group-item" *ngFor="let ingredient of recipe.ingredients">
-                {{ ingredient.name }} - {{ ingredient.amount }}
-            </li>
-        </ul>
-    </div>
+  <div class="col-sm-12">
+    <ul class="list-group">
+      <li class="list-group-item" *ngFor="let ingredient of recipe.ingredients">
+        {{ ingredient.name }} - {{ ingredient.amount }}
+      </li>
+    </ul>
+  </div>
 </div>
